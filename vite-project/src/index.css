@@ -39,7 +39,7 @@ h1 {
 }
 
 .quantity {
-  color: #3d4a6e;
+  color: #c0d0ef;
   font-size: 36px;
 }
 
@@ -60,18 +60,26 @@ button, input[type="submit"] {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #d0e0ef;
+  color: #0f1c30;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover, input[type="submit"]:hover {
-  background-color: #0f1c30;
+  background-color: #668dcd;
+  color: #ffffff;
 }
 button:focus,
 button:focus-visible,
 input[type="submit"]:focus,
 input[type="submit"]:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.set-theme {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -85,5 +93,9 @@ input[type="submit"]:focus-visible {
   button, input[type="submit"] {
     background-color: #3d4a6e;
     color: #ffffff;
+  }
+
+  .quantity {
+    color: #3d4a6e;
   }
 }
